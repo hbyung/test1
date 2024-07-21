@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class homecontroller {
 
-    @GetMapping("/")
+    @GetMapping("/hello")
     public String home1 (){
         return "index";
     }
