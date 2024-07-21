@@ -1,9 +1,4 @@
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/redis?serverTimezone=Asia/Seoul
-    username: scott
-    password: 1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
@@ -12,12 +7,6 @@ spring:
       hibernate:
         format_sql: true
         default_batch_fetch_size: 100
-#    open-in-view: false
-  cache:
-    type: redis
-  redis:
-    host: redis.vdrxqh.ng.0001.apn2.cache.amazonaws.com:6379
-    port: 6379
 
 logging:
   level:
