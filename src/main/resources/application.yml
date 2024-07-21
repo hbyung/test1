@@ -4,8 +4,6 @@ spring:
     username: scott
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
-  server:
-    port: 80
 
   jpa:
     hibernate:
@@ -25,3 +23,6 @@ logging:
   level:
     org.hibernate.SQL : debug
 #    org.hibernate.orm.jdbc.bind: trace
+
+server:
+  port: 80
