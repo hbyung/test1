@@ -1,5 +1,3 @@
-FROM tomcat:9.0
-
-LABEL org.opencontainers.image.authors="edowon0623@gmail.com"
-
-COPY ./target/*.jar /usr/local/tomcat/webapps/
+FROM openjdk:11-jre
+COPY build/libs/*.jar app.jar
+ENTRYPOINT ["java","-jar","app.jar"]
