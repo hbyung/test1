@@ -1,8 +1,8 @@
-FROM tomcat:9.0
+FROM tomcat:9.0.91-jdk17-corretto-al2
 
 LABEL org.opencontainers.image.authors="edowon0623@gmail.com"
 
-COPY ./target/*.war /usr/local/tomcat/webapps/
+COPY ./build/libs/*.war /usr/local/tomcat/webapps/
 
 # FROM bellsoft/liberica-openjdk-alpine:17
 # # or
