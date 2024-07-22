@@ -2,7 +2,7 @@ FROM tomcat:10.1.26-jdk17-temurin-jammy
 
 LABEL org.opencontainers.image.authors="edowon0623@gmail.com"
 
-COPY ./build/libs/*.war /usr/local/tomcat/webapps/
+COPY ./target/*.war /usr/local/tomcat/webapps/
 
 # FROM bellsoft/liberica-openjdk-alpine:17
 # # or
