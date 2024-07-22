@@ -1,4 +1,4 @@
-FROM tomcat:9.0.91-jdk17-corretto-al2
+FROM tomcat:10.1.26-jdk17-temurin-jammy
 
 LABEL org.opencontainers.image.authors="edowon0623@gmail.com"
 
